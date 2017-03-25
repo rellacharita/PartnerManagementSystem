@@ -11,8 +11,16 @@ using System.Text;
 
 namespace ISSI.PartnerManagementSystem.BusinessObjects
 {
+    /// <summary>
+    /// 
+    /// </summary>
     public static class Security
     {
+        /// <summary>
+        /// Encryptpasses the specified password.
+        /// </summary>
+        /// <param name="password">The password.</param>
+        /// <returns></returns>
         public static String encryptpass(string password)
         {
                 byte[] encode = new byte[password.Length];
@@ -20,6 +28,11 @@ namespace ISSI.PartnerManagementSystem.BusinessObjects
                 string msg = Convert.ToBase64String(encode);
                 return msg;
         }
+        /// <summary>
+        /// Decryptpasses the specified encryptpass.
+        /// </summary>
+        /// <param name="encryptpass">The encryptpass.</param>
+        /// <returns></returns>
         private static string Decryptpass(string encryptpass)
         {
             string decode = string.Empty;
