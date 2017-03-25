@@ -10,6 +10,7 @@ namespace ISSI.PartnerManagementSystem.BusinessObjects
     {
       private Guid _roleID;
       private string _roleName = string.Empty;
+      private List<Menu> _menus = new List<Menu>();
       public Guid roleID
       {
           set
@@ -34,8 +35,11 @@ namespace ISSI.PartnerManagementSystem.BusinessObjects
               return _roleName;
           }
       }
-      
 
+      public List<Menu> Menus {
+          set { _menus = value; }
+          get { return _menus; }
+      }
 
 
     }

@@ -10,7 +10,7 @@ namespace ISSI.PartnerManagementSystem.BusinessObjects
     {
         private int _menuID;
         private string _menuName = string.Empty;
-
+        private List<Rights> _rights = new List<Rights>();
         public int menuID
         {
             set { _menuID = value; }
@@ -20,6 +20,11 @@ namespace ISSI.PartnerManagementSystem.BusinessObjects
         {
             set { _menuName = value; }
             get { return _menuName; }
+        }
+
+        public List<Rights> Rights {
+            set { _rights = value; }
+            get { return _rights; }
         }
     }
 }
