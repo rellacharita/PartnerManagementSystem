@@ -1,0 +1,67 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Frontend.master.cs" Inherits="ISSI.PartnerManagementSystem.Web.Frontend" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .MainMenu {
+            font-size: x-small;
+        }
+        .MainMenu {
+            font-size: large;
+        }
+        .MainMenu ul li
+  {
+    /*
+    Gives the five menu items in the main menu a width of 160px each.
+  */
+    width: 200px;
+  }
+
+
+    </style>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div id="PageWrapper">
+        <header>
+            <div class="img-responsive">
+                    <img src="http://www.sumtotalsystems.com/dist/img/partner_logos/issi.png" alt="Logo" class="logo" width="100" height="50" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span class="auto-style1"><strong><span class="auto-style2">PARTNER MANAGEMENT SYSTEM&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>
+                        &nbsp;<asp:Label ID="welcomeUser" runat="server" ForeColor="#990000" style="font-size: medium"></asp:Label>
+                        <asp:Button ID="Button2" runat="server" BackColor="White" ForeColor="#990000" OnClick="Logout_Click" style="margin-left: 199px" Text="Logout" Width="132px" />
+                    </strong></span>
+                </div><br />
+        </header>
+
+         <nav> 
+            <asp:Menu ID="Menu1" runat="server" DataSourceID="SiteMapDataSource1" CssClass="MainMenu" Orientation="Horizontal" StaticEnableDefaultPopOutImage="False" OnMenuItemDataBound="Menu1_MenuItemDataBound" BackColor="#FFFBD6" DynamicHorizontalOffset="2" Font-Names="Verdana" Font-Size="0.8em" ForeColor="#990000" StaticSubMenuIndent="10px" >
+                <DynamicHoverStyle BackColor="#990000" ForeColor="White" />
+                <DynamicMenuItemStyle HorizontalPadding="5px" VerticalPadding="2px" />
+                <DynamicMenuStyle BackColor="#FFFBD6" />
+                <DynamicSelectedStyle BackColor="#FFCC66" />
+                <StaticHoverStyle BackColor="#990000" ForeColor="White" />
+                <StaticMenuItemStyle HorizontalPadding="5px" VerticalPadding="2px" />
+                <StaticSelectedStyle BackColor="#FFCC66" />
+             </asp:Menu>
+            
+             <br />
+             <br />
+            
+            <asp:SiteMapDataSource ID="SiteMapDataSource1" runat="server" ShowStartingNode="False" />
+           
+         
+       </nav>
+        <asp:ContentPlaceHolder ID="MainContent" runat="server">
+            
+       
+        </asp:ContentPlaceHolder>
+        
+    </div>
+    </form>
+</body>
+</html>

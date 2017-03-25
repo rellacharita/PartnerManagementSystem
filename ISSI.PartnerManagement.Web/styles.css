@@ -1,0 +1,60 @@
+﻿button {
+    background-color: #ff884d;
+
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+     width: 50%;
+    text-align: center;
+}
+
+.imgcontainer {
+    text-align: left;
+    margin: 24px 0 12px 0;
+    position: relative;
+}
+
+img.logo {
+    width: 1%;
+    border-radius: 1%;
+
+}
+
+.container {
+    
+       padding: 25px;
+    
+       position: fixed;
+
+}
+.hidden{
+    display:none;
+}
+
+.auto-style1 {
+            width: 100%;
+        }
+        .auto-style2 {
+            width: 1444px;
+        }
+        .auto-style3 {
+            width: 710px;
+            text-align: right;
+        }
+        .auto-style4 {
+            width: 710px;
+            text-align: right;
+            height: 26px;
+        }
+        .auto-style5 {
+            height: 26px;
+        }
+        .auto-style6 {
+            width: 710px;
+            text-align: right;
+            height: 29px;
+        }
+.auto-style7 {
+    height: 29px;
+}

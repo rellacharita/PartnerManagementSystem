@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+  <siteMapNode url="~/" title="Home" description="Home">
+    <siteMapNode url="~/PartnerManagement/Partner.aspx" title="Partner Management" description="Go to the Partner page" >
+    </siteMapNode>
+    <siteMapNode url="~/RoleManagement/RoleManagement.aspx" title="Role Management"  description="Gives the view of role data">
+    </siteMapNode>
+    <siteMapNode url="~/UserManagement/UserManagement.aspx" title="User Management"  description="Gives the view of user data" >
+    </siteMapNode>
+  </siteMapNode>
+
+</siteMap>
