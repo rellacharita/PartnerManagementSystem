@@ -13,11 +13,19 @@ namespace ISSI.PartnerManagement.Controller
     {
        private UserData _userData;
 
+       /// <summary>
+       /// Initializes a new instance of the <see cref="UserController"/> class.
+       /// </summary>
+       /// <param name="connectionString">The connection string.</param>
        public UserController(string connectionString)
        {
            _userData = new UserData(connectionString);
        }
 
+       /// <summary>
+       /// Gets the user.
+       /// </summary>
+       /// <returns></returns>
        public List<User> getUser()
        {
            return _userData.getUser();
