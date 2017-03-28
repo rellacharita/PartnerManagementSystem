@@ -71,6 +71,5 @@ namespace ISSI.PartnerManagementSystem.Web
             Response.Redirect("~/UserManagement/UserManagement.aspx");
         }
 
-       
     }
 }

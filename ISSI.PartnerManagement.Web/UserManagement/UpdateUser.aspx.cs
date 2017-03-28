@@ -62,7 +62,7 @@ namespace ISSI.PartnerManagementSystem.Web
             string strpass = encryptpass(cpass.Text);
 
             SqlConnection con = new SqlConnection(ConfigurationManager.ConnectionStrings["CustomerConnectionString2"].ConnectionString);
-            SqlCommand cmd1 = new SqlCommand("Update c_details set cuser='" + SelectedUser.UserName + "',cpass='" + strpass + "',email='" + SelectedUser.EmailAddress + "',mobile='" + SelectedUser.Mobile + "',dob='" + SelectedUser.DateOfBirth + "' where ID= '" + SelectedUser.UserId.ToString() + "'", con);
+            SqlCommand cmd1 = new SqlCommand("Update c_details set cuser='" + SelectedUser.UserName + "',cpass=' +Security.encryptpass +',email='" + SelectedUser.EmailAddress + "',mobile='" + SelectedUser.Mobile + "',dob='" + SelectedUser.DateOfBirth + "' where ID= '" + SelectedUser.UserId.ToString() + "'", con);
             con.Open();
             cmd1.ExecuteNonQuery();
             cmd1.Parameters.Clear();
@@ -116,9 +116,6 @@ namespace ISSI.PartnerManagementSystem.Web
             RoleList.DataValueField = "RoleID";
             RoleList.DataBind();
         }
-       /* private void DropDown()
-        {
-            RoleList.SelectedValue =
-        } */
+       
     }
 }
