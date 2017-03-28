@@ -20,13 +20,13 @@ namespace ISSI.PartnerManagementSystem.Web
             con.Open();
         }
 
-        protected void cancelUpdate(object sender, EventArgs e)
+        protected void cancelAdd(object sender, EventArgs e)
         {
             Response.Redirect("~/PartnerManagement/Partner.aspx");
         }
 
 
-        protected void OK_Click(object sender, EventArgs e)
+        protected void AddUser(object sender, EventArgs e)
         {
             PartnerDetails partnerObject = new PartnerDetails();
             partnerObject.PartnerID = Guid.NewGuid();
@@ -49,5 +49,6 @@ namespace ISSI.PartnerManagementSystem.Web
             Panel1.Visible = true;          
             Response.Redirect("~/PartnerManagement/Partner.aspx");
         }
+
     }
 }

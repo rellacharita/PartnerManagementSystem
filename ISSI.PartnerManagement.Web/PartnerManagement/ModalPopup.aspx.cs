@@ -72,13 +72,13 @@ namespace ISSI.PartnerManagementSystem.Web
             con.Open();
             cmd1.ExecuteNonQuery();
             con.Close();
-            Response.Redirect("~/Partner.aspx");
+            Response.Redirect("~/PartnerManagement/Partner.aspx");
            
         }
 
         protected void btn_cancel(object sender, EventArgs e)
         {
-            Response.Redirect("Partner.aspx");
+            Response.Redirect("~/PartnerManagement/Partner.aspx");
      
        }
 

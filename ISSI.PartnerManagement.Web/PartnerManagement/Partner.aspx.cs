@@ -41,7 +41,7 @@ namespace ISSI.PartnerManagementSystem.Web
             if (e.CommandName == "EditButton")
             {
                 int index = Convert.ToInt32(e.CommandArgument);
-                Response.Redirect("~/ModalPopup.aspx?PartnerID=" + GridView1.Rows[index - 1].Cells[0].Text);
+                Response.Redirect("~/PartnerManagement/ModalPopup.aspx?PartnerID=" + GridView1.Rows[index - 1].Cells[0].Text);
             }
         }
         protected void Button1_Click(object sender, EventArgs e)

@@ -109,14 +109,18 @@
 	</tr>
 	<tr>
 		<td>
-		<asp:Button ID="OK"  runat="server" Text="OK" Width="91px" OnClick="OK_Click"  />
+		<asp:Button ID="OK"  runat="server" Text="Submit" Width="91px" OnClick="AddUser"  />
 		    <input id="Reset2" type="reset" value="reset" />
 		</td>
 		<td>
-		<asp:Button ID="btnCancel" runat="server" Text="Cancel" OnClick="cancelUpdate"  />
+		<asp:Button ID="btnCancel" runat="server" Text="Cancel" OnClick="cancelAdd"  />
 		</td>
 	</tr>
 </table>
+
+
+
+
     </asp:Panel>
 
 </asp:Content>

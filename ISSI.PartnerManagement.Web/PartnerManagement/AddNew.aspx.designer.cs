@@ -7,8 +7,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace ISSI.PartnerManagementSystem.Web
-{
+namespace ISSI.PartnerManagementSystem.Web {
     
     
     public partial class AddNew {
